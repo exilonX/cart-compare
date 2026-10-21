@@ -46,7 +46,7 @@ Every project here was built by people working on the same problem we are. Where
   - None publishes user numbers. All of them work from promotions or catalogues, not full Baskets [Obs][S].
 - **We found little media pickup.**
   - The only third-party coverage found was Economedia's guide of May 2026, which is sponsored by Banca Transilvania. It describes RadarPrețuri, Blix, Ofertelino and Listiq [M].
-  - We found no coverage of gov2-ro, of money.ro's ranking, of PromoAzi or of zgârcit.ro. Only three searches were run, so this is a weak negative.
+  - We found no coverage of gov2-ro, of money.ro's ranking, of PromoAzi or of zgârcit.ro. Only four searches targeted media pickup, so this is a weak negative.
 - **A Comparable not on the ticket also exists.** The consumer NGO InfoCons publishes recurring "Cât ne costă alimentele de bază" ("what basic foods cost us") minimum-price studies across 9 Chains in Bucharest (Aug 2025 to Sep 2026), including a year-on-year comparison [Obs].
 - **What only the Grocery Basket Index would add:** a weekly, openly licensed, archived Basket series, with:
   - published rules;
@@ -188,7 +188,7 @@ Every project here was built by people working on the same problem we are. Where
   - iOS listings give rating counts only, with version dates that show no year.
   - Self-reported counters (offers, products) are not audience figures.
   - No traffic estimates (Ahrefs or similar) were collected for these sites.
-- **Media pickup is a weak negative.** Only three web searches were run, on a US-indexed engine that under-covers Romanian outlets. "None found" does not mean "none exists".
+- **Media pickup is a weak negative.** Only four web searches targeted media pickup, on a US-indexed engine that under-covers Romanian outlets. "None found" does not mean "none exists".
 - **We have not seen gov2-ro's site.** It was offline on 21 Oct 2026, so its features are inferred from code, configuration and commit messages. Whether the published pages showed CSV downloads, and under what terms, was not seen.
 - **Fresh food on Monitorul Prețurilor.** gov2-ro (Apr 2026) says the platform has no fresh dairy, meat or produce. money.ro (Oct 2026) priced milk, butter and cheese from it. Either the catalogue changed, or "fresh" means different things in the two sources. This was not resolved.
 - **RadarPrețuri's operator, launch date and app figures** are unknown. Its only data-source statement is generic ("surse publice online", public online sources).
