@@ -19,8 +19,12 @@ The price any visitor sees without an account or loyalty card.
 _Avoid_: public price, list price
 
 **Loyalty price**:
-The price shown only to holders of a chain's account, app or loyalty card.
+The price a Chain advertises to every holder of its loyalty card or app, obtained by identifying at the till; one number per product.
 _Avoid_: member price, app price
+
+**Personalised offer**:
+A reduction that differs between loyalty members, such as targeted coupons, vouchers, points or bonus redemptions, spend-based discounts and test-group rates; never part of a Loyalty price.
+_Avoid_: loyalty discount, coupon price
 
 **Reported price**:
 A price a Chain submits to Monitorul Prețurilor under its legal reporting duty; it may differ from the Shelf price actually on display.
