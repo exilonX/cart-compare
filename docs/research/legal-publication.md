@@ -4,7 +4,7 @@ Research for ticket [#10](https://github.com/exilonX/cart-compare/issues/10) on 
 
 > **Not legal advice.** This is desk research by contributors to an open-source civic project. It was written from public primary sources (EUR-Lex and the EU Publications Office, CURIA, HUDOC, legislatie.just.ro, the Competition Council and Monitorul Prețurilor sites). Points that rest on secondary commentary are marked *(secondary)*. A Romanian IT and media lawyer must confirm the conclusions before launch. The questions to put to them are listed near the end.
 
-**What is being published.** The [project overview](https://github.com/exilonX/cart-compare/issues/1) plans four features: a Basket ranking per Chain at Shelf price and at Loyalty price; weekly price history per product with a discount flag; a region and country view; and shareable social-media cards. This note assumes the project stays non-commercial (no ads, no affiliate links, no money from any Chain) and publishes only the Basket items (roughly 125 items per Chain), not a catalogue mirror. Section 10 covers the scenario raised after #8, where Shelf prices would come from the state-run Monitorul Prețurilor platform instead of our own collection.
+**What is being published.** The [project overview](https://github.com/exilonX/cart-compare/issues/1) plans four features: a Basket ranking per Chain at Shelf price and at Loyalty price; weekly price history per product with a discount flag; a region and country view; and shareable social-media cards. This note assumes the project stays non-commercial (no ads, no affiliate links, no money from any Chain) and publishes only the Basket items (roughly 125 items per Chain), not a catalogue mirror. Section 10 covers the scenario raised after #8, where Shelf prices would come from the state-run Monitorul Prețurilor platform instead of our own collection. Section 11 covers Chains quoting the index in their own advertising.
 
 ## Answer
 
@@ -12,7 +12,7 @@ Research for ticket [#10](https://github.com/exilonX/cart-compare/issues/10) on 
 - **The discount flag is our largest exposure.** It implies that a Chain broke HG 947/2000 art. 4^1, an administrative offence fined at 5,000–30,000 lei and enforced by ANPC ([HG 947/2000](https://legislatie.just.ro/Public/DetaliiDocumentAfis/255257)). A flag is defensible only as a narrow, mechanical, evidenced check, such as "the prior price shown is higher than the lowest price we recorded in the previous 30 days". It should never say "fake", "fals" or "înșelătorie".
 - **Romania's rule differs from the bare EU rule in ways that matter for groceries.** It has a 10-day window for perishable goods, special rules for new products and progressive reductions, and it measures the prior price per sales area ([HG 947/2000 art. 4^1](https://legislatie.just.ro/Public/DetaliiDocumentAfis/255257)). Weekly snapshots cannot reliably test perishable goods.
 - **Loyalty prices are only partly covered by the 30-day rule.** The rule does not cover standing loyalty-programme discounts or personalised vouchers. It does cover member-only reductions announced to the public when many or most customers are members, and then the reference is the lowest publicly available price ([Commission guidance, s. 2.3](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021XC1229%2806%29)). The Romanian text is silent on this, so Loyalty price flags are a lawyer question.
-- **Unfair-competition and comparative-advertising law probably do not reach a non-commercial civic publisher.** Law 11/1991 targets enterprises denigrating competitors ([Law 11/1991 art. 2](https://legislatie.just.ro/Public/DetaliiDocument/1440)), and Law 158/2008 targets advertising that promotes sales ([Law 158/2008 art. 3](https://legislatie.just.ro/Public/DetaliiDocumentAfis/150055)). This changes if we take money from a Chain or monetise. If a Chain quotes our ranking in its own advertising, that Chain must make the advertising lawful.
+- **Unfair-competition and comparative-advertising law probably do not reach a non-commercial civic publisher.** Law 11/1991 targets enterprises denigrating competitors ([Law 11/1991 art. 2](https://legislatie.just.ro/Public/DetaliiDocument/1440)), and Law 158/2008 targets advertising that promotes sales ([Law 158/2008 art. 3](https://legislatie.just.ro/Public/DetaliiDocumentAfis/150055)). This changes if we take money from a Chain or monetise. If a Chain quotes our ranking in its own advertising, the law puts liability on that Chain, not on us ([Law 158/2008 art. 17](https://legislatie.just.ro/Public/DetaliiDocumentAfis/150055)). A published claims policy with a tie threshold keeps noise-level wins from being advertised as "cheapest" (section 11).
 - **Chain names in plain text are lawful referential use; logos are not worth the risk.** Naming a Chain to identify it is referential use ([EUTMR art. 14(1)(c)](https://eur-lex.europa.eu/eli/reg/2017/1001/oj/eng); Law 84/1998 art. 45(1)(c), *(secondary consolidated copy)*). A civic project is probably not using marks "in the course of trade" at all. Logos add copyright and confusion risk for no informational gain, so cards should carry names only.
 - **Open data is low risk at Basket scale.** Prices are facts, outside copyright ([Law 8/1996 art. 9(f)](https://legislatie.just.ro/Public/DetaliiDocument/7816)). The database right protects only substantial parts, and extraction is unlawful only where it harms the maker's investment ([C-762/19](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62019CJ0762)). The residual risks are contractual (account terms behind Loyalty prices) and a long, item-level history. This supports publishing Basket-level data and the item lists first.
 - **Competition law is a design constraint, not a blocker.** The Commission lists price-comparison data as an efficiency gain ([Horizontal Guidelines, para. 425](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52023XC0721%2801%29)), and the Competition Council runs a price platform itself ([consiliulconcurentei.ro](https://www.consiliulconcurentei.ro/)). Our rules: only prices already public, no non-public feeds from Chains, nothing forward-looking, the same access for everyone.
@@ -182,7 +182,7 @@ It matters in two other ways:
 
 **Risk level: Low / not applicable**, while we neither advertise nor produce ads for anyone.
 
-**Design implications.** Publish a short "using our results" policy. Media and NGOs may cite freely with date and Basket. If a Chain cites us in advertising, it must reproduce the date, the Basket, the price type and a link to the method, and we may publicly state that we do not endorse any Chain.
+**Design implications.** Publish a short "using our results" policy (detailed in section 11). Media and NGOs may cite freely with date and Basket. If a Chain cites us in advertising, it must reproduce the date, the Basket, the price type and a link to the method, and we may publicly state that we do not endorse any Chain.
 
 ## 5. Chain names and logos on shareable cards
 
@@ -348,6 +348,61 @@ Ticket #8 found that the Competition Council owns and runs Monitorul Prețurilor
 
 **Risk level: Low** for rankings and Basket-level open data built on platform data with attribution and correct labelling. **Medium** for any discount flag that leans on platform data. **Unknown** for the formal reuse right, which a written request under Law 179/2022 would settle.
 
+**A caution from Hungary.** Hungary's competition authority (GVH) runs Árfigyelő, a statutory equivalent of Monitorul Prețurilor. In 2023 it called an unofficial app that copied the data "az online Árfigyelő rendszer illetéktelen, engedély nélküli felhasználása" ("an unauthorised, unlicensed use of the online Árfigyelő system"), and announced civil and criminal steps against its makers ([Telex, 5 Aug 2023](https://telex.hu/belfold/2023/08/05/gvh-figyelmeztetes-kalozapplikacio-arfigyelo), *secondary*, via [#3 findings](https://github.com/exilonX/cart-compare/blob/research/cee-comparables/docs/research/cee-comparables.md)). A state operator can react badly to unannounced reuse. That is one more reason to ask the Council in writing before building on its data.
+
+## 11. When a Chain quotes the index in its advertising
+
+**What Comparables show** (from the #4 and #3 findings, *secondary*):
+
+- **Chains advertise index wins.** Aldi UK issues a press release every month it tops Which?'s ranking ([#4 findings](https://github.com/exilonX/cart-compare/blob/research/western-comparables/docs/research/western-comparables.md)).
+- **Regulators look hard at noise-level wins.** In March 2024 the UK advertising regulator (ASA) upheld a Sainsbury's complaint against an Aldi "Britain's cheapest Christmas dinner" ad that carried a Which? endorsement roundel. Which? had found 4p between Aldi and Lidl, and the ASA said: "While Aldi was technically the cheapest, this was by a negligible amount" ([Grocery Gazette, 20 Mar 2024](https://www.grocerygazette.co.uk/2024/03/20/aldi-ad-christmas-misleading)). Which? was not sanctioned, but said it was "disappointed that a Which? endorsement logo and our research was used" ([County Press/PA](https://countypress.co.uk/news/national/uk-today/24198333.aldi-cheapest-supermarket-advert-branded-misleading)).
+- **Authorities can set a minimum gap.** In November 2025 the GVH closed a case over Lidl Hungary's "champion of low prices" slogan after Lidl made commitments, without finding an infringement. Lidl may make a monthly average-Basket claim only if it is at least 2.5% cheaper than the second-cheapest Chain, on the regulator's data ([Economx, 13 Nov 2025](https://www.economx.hu/magyar-gazdasag/2025/11/13/gvh-versenyhivatal-eljaras-lidl-arak-819279/), *secondary*, via [#3 findings](https://github.com/exilonX/cart-compare/blob/research/cee-comparables/docs/research/cee-comparables.md)).
+
+### 11.1 Romanian rules for a Chain that cites a third-party index
+
+**Comparative advertising (Law 158/2008).** An ad saying "cheapest according to the Grocery Basket Index" identifies competitors explicitly or implicitly, so it is comparative advertising (art. 3(c)). It must meet every condition of art. 6, including that it is not misleading and that it compares "în mod obiectiv" ("objectively") features that are "relevante, verificabile și reprezentative" ("relevant, verifiable and representative"), price included ([Law 158/2008](https://legislatie.just.ro/Public/DetaliiDocumentAfis/150055)). On a complaint, or on their own initiative, the Ministry of Finance or ANPC:
+
+- ask the advertiser for "toate dovezile necesare privind exactitatea afirmațiilor" ("all evidence needed on the accuracy of the claims"), to be supplied quickly for comparative advertising (art. 9(1), (4));
+- treat the claims as inexact if the evidence is missing, late or insufficient (art. 9(5));
+- fine breaches 3,000–30,000 lei (art. 10);
+- can order the ad stopped, or banned before it runs, without proof of actual harm or fault (art. 11);
+- can require a corrective statement to be published at the advertiser's expense (art. 12).
+
+Competitors, consumers and "asociațiile și organizațiile care au interes legitim" ("associations and organisations with a legitimate interest") can all complain (art. 7, 9). The Court of Justice's Basket cases set the bar for representativeness, disclosed differences and verifiable items ([C-159/09](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62009CJ0159), [C-562/15](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62015CJ0562)).
+
+**Consumer law (ANPC).** A "cheapest" claim made to shoppers is also a commercial practice under the Unfair Commercial Practices Directive, transposed by Law 363/2007 ([Law 11/1991 art. 2^1(3)](https://legislatie.just.ro/Public/DetaliiDocument/1440) points to that law for consumers' economic interests). Two items on the Directive's blacklist matter here. A trader may not display "a trust mark, quality mark or equivalent without having obtained the necessary authorisation" (Annex I, point 2). Nor may it claim that it "has been approved, endorsed or authorised by a public or private body when he/it has not", or make such a claim "without complying with the terms of the approval, endorsement or authorisation" (point 4) ([Directive 2005/29/EC](https://eur-lex.europa.eu/eli/dir/2005/29/oj/eng)). A Chain presenting our ranking as an endorsement or badge risks both.
+
+**Self-regulation (RAC).** The Romanian Advertising Council (Consiliul Român pentru Publicitate, RAC) approved the latest version of its Code of Practice in Commercial Communication on 15 December 2025 ([RAC Code](https://www.rac.ro/ro/cod/codul-de-practic%C4%82-%C3%8En-comunicarea-comercial%C4%82)). Under it:
+
+- Communications must cite quantitative studies correctly, in a way "care să poată fi demonstrată și substanțiată pe toată perioada comunicării" ("that can be demonstrated and substantiated for the whole period of the communication"), and present statistics and their source "fără a exagera validitatea afirmațiilor" ("without exaggerating the validity of the claims") (art. 2(a)–(b)).
+- The advertiser must be able to prove its data with evidence that is "actuale, relevante și documentate" ("current, relevant and documented") (art. 7.1).
+- Comparison must meet conditions mirroring Law 158/2008 art. 6 (art. 12).
+- The Ethics Committee can ask the advertiser for supporting documents (art. 42.6).
+
+The Code binds RAC members, who agree to stop or change a communication the Ethics Committee finds in breach. We did not check which of the 8 Chains, or their agencies and media, are RAC members.
+
+### 11.2 Does the index carry liability or a duty when a Chain quotes it?
+
+- **Regulatory liability sits with the advertiser.** "Răspunderea revine comerciantului beneficiar al anunțului publicitar" ("liability lies with the trader who benefits from the advertisement", Law 158/2008 art. 17(1)), and the burden of proof is on the advertiser (art. 9) ([Law 158/2008](https://legislatie.just.ro/Public/DetaliiDocumentAfis/150055)).
+- **Joint liability is limited to those who make or carry the ad.** Law 148/2000 art. 18, as amended, makes the author, the producer of the advertising and the medium jointly liable with the advertiser (Law 158/2008 art. 23). We stay outside that only if we take no part in making, approving or carrying any Chain's ad, and accept no payment or licence fee for the use of our results.
+- **Civil liability does not grow, but the stakes do.** If our published figures are accurate and a Chain misquotes them, the misquote is the Chain's act. If our figures are wrong and a Chain advertises them, a competitor harmed by the ad could look to us in tort ([Civil Code art. 1357](https://legislatie.just.ro/Public/DetaliiDocument/175630)). This is the same exposure as in section 1, but an ad multiplies the harm.
+- **No statutory duty to police use.** We found no rule requiring a publisher to monitor or correct how advertisers cite it.
+- **Practical consequences remain.** A regulator or the RAC Ethics Committee examining a Chain's evidence will examine our method, as the ASA effectively did with Which?'s 4p result. Being associated with a misleading ad also damages a civic index's credibility.
+
+**Risk level: Low** for us legally, while we stay out of ad production and payment. Reputational risk is **Medium** if noise-level wins are advertised.
+
+### 11.3 What a published claims policy or tie threshold can do
+
+Ranking facts are not copyright works ([Law 8/1996 art. 9(f)](https://legislatie.just.ro/Public/DetaliiDocument/7816)), so we cannot stop a Chain from stating them truthfully. A policy still helps in five ways:
+
+1. **It removes noise-level "winners" at the source.** Define a tie threshold based on our measurement error: item substitutions, regional variation, sampling timing. Where two Chains' Basket totals differ by less than the threshold, show them as tied ("la egalitate"), not ranked. Optionally, show a "lowest total" label only after the lead holds for several consecutive weeks. The GVH's 2.5% gap for Lidl is one external reference point. Our own threshold should come from our error analysis (ticket #6), and Shelf and Loyalty rankings should each get their own.
+2. **It gives regulators a benchmark.** If our published method says a gap is within a tie, a "cheapest" ad based on it is hard to substantiate under Law 158/2008 art. 9 or RAC Code art. 2(b). The policy does our enforcement work through the advertiser's burden of proof.
+3. **It documents non-endorsement.** A clear "no endorsement, no badges" statement, together with UCPD Annex I point 4, makes any claim of endorsement by us a blacklisted practice by the Chain. If we licence our data under CC BY 4.0, its clause 2(a)(6) already says that nothing in the licence permits a user "to assert or imply that You are … connected with, or sponsored, endorsed, or granted official status by, the Licensor" ([CC BY 4.0 legal code](https://creativecommons.org/licenses/by/4.0/legalcode.en)). CC0 has no such clause, which is a point for the licence choice in #11.
+4. **It sets citation conditions that reduce misquotes.** Cite the date, Basket, city and price type (Shelf or Loyalty), link the method, and do not extrapolate (for example, no "cheapest in Romania" from a Bucharest Basket). These conditions are enforceable only as licence terms on our data, or through a trademark in the index name if we register one. Otherwise they work as public norms that regulators and the press can point to.
+5. **It commits us to correct misuse in public.** Publish a "misquote" note when a Chain overstates our results, and tell the Chain. Anyone may also complain to ANPC or the RAC. We should not offer a badge, roundel or "winner" logo at all: that is the device the ASA case turned on, and licensing one for money would make us commercial (section 3).
+
+**Keep the policy unilateral.** We should set the threshold ourselves and publish it. We should not negotiate it jointly with the Chains: a collective arrangement among competing Chains about how they may advertise prices raises its own competition question, which belongs on the lawyer list.
+
 ## Questions for a Romanian IT lawyer
 
 **Discount flag and consumer law**
@@ -385,6 +440,14 @@ Ticket #8 found that the Competition Council owns and runs Monitorul Prețurilor
 19. If a Chain-reported price is wrong and our ranking repeats it with attribution, how is liability apportioned under Civil Code art. 1357 and 1371? Does the platform's own disclaimer that prices "may differ" weaken our good-faith defence?
 20. Must or should we attribute the Council? How do we word attribution so it does not suggest endorsement, given the Council says the platform is not a comparator?
 
+**Chains quoting the index in advertising (section 11)**
+
+21. When a Chain cites our index in a comparative ad, is liability confined to the advertiser (Law 158/2008 art. 17)? Could any role on our side, such as a licence fee, approving copy, supplying data on request, or a media partnership, make us a "realizator" or medium jointly liable under Law 148/2000 art. 18?
+22. Can a published claims policy (tie threshold, citation conditions, no-endorsement statement) be made binding on Chains? Possible routes are licence terms on our data (CC BY 4.0), a registered trademark in the index name, or website terms. Which is enforceable against a Chain that only reads our public pages?
+23. If a Chain presents our ranking as an endorsement or badge, is that a blacklisted practice under the Law 363/2007 equivalent of UCPD Annex I point 2 or 4? Who should complain (ANPC, the Ministry of Finance, the RAC), and may we complain as an association with a "legitimate interest" (Law 158/2008 art. 7, 9)?
+24. Would consulting the Chains on a common tie threshold, or hosting a joint code on how the index may be cited, raise competition concerns under Law 21/1996 art. 5? Is a purely unilateral policy safe?
+25. If a regulator or court asks a Chain to substantiate a claim based on our index, can we be compelled to hand over our underlying data or captures? On what terms should we provide them voluntarily?
+
 ## Gaps and uncertainties
 
 - **Search budget.** The shared web-search budget ran out midway through this research. Points we could not check:
@@ -402,6 +465,9 @@ Ticket #8 found that the Competition Council owns and runs Monitorul Prețurilor
 - **Our own analysis.** The one-sided logic of the weekly-sampling test (section 2.4) is ours. A statistician and the lawyer should both check it.
 - **Croatian decision NN 75/2025** is cited from a project README, not from the Narodne novine text.
 - **Monitorul Prețurilor facts** (no licence, Romania-only access, data quality) come from ticket #8 and were not re-verified here, except for the platform's disclaimer, its description page and the Mega Image press release, which we read directly.
+- **Advertising cases (section 11).** The ASA's Aldi ruling (2024) and the GVH's Lidl commitments (2025) are cited from media reports gathered by tickets #4 and #3. We could not retrieve the ASA ruling or the GVH decision themselves.
+- **RAC membership.** We did not verify which of the 8 Chains, their agencies or their media are RAC members, so we do not know how far the RAC Code reaches them.
+- **Tie threshold.** We give no specific value. It should come from our own measurement-error analysis.
 
 ## Sources
 
@@ -458,6 +524,8 @@ Ticket #8 found that the Competition Council owns and runs Monitorul Prețurilor
 - Monitorul Prețurilor, home page disclaimer — https://monitorulpreturilor.info/
 - Monitorul Prețurilor, retail description — https://monitorulpreturilor.info/Home/Retail/Descriere
 - ANPC — https://anpc.ro/
+- Consiliul Român pentru Publicitate (RAC), Codul de Practică în Comunicarea Comercială (version of 15.12.2025) — https://www.rac.ro/ro/cod/codul-de-practic%C4%82-%C3%8En-comunicarea-comercial%C4%82
+- Creative Commons, CC BY 4.0 legal code — https://creativecommons.org/licenses/by/4.0/legalcode.en
 
 **Comparables and secondary sources**
 
@@ -469,3 +537,9 @@ Ticket #8 found that the Competition Council owns and runs Monitorul Prețurilor
 - DLA Piper, "Change of an era: GEO 58/2022", 11.5.2022 (secondary) — https://www.dlapiper.com/en-us/insights/publications/2022/05/change-of-an-era-geo-58-2022
 - Lynx Legal, "Romania: 2022's Black Friday under review" (secondary) — https://lynx.legal/?p=6225
 - Ticket #8 findings, "What does Monitorul Prețurilor do…" — https://github.com/exilonX/cart-compare/blob/research/monitorul-preturilor/docs/research/monitorul-preturilor.md
+- Ticket #4 findings, Western basket indices and price apps — https://github.com/exilonX/cart-compare/blob/research/western-comparables/docs/research/western-comparables.md
+- Ticket #3 findings, CEE Comparables — https://github.com/exilonX/cart-compare/blob/research/cee-comparables/docs/research/cee-comparables.md
+- Grocery Gazette, "Aldi ad … misleading", 20.3.2024 (secondary) — https://www.grocerygazette.co.uk/2024/03/20/aldi-ad-christmas-misleading
+- County Press (PA), "Aldi cheapest supermarket advert branded misleading", March 2024 (secondary) — https://countypress.co.uk/news/national/uk-today/24198333.aldi-cheapest-supermarket-advert-branded-misleading
+- Economx, GVH and Lidl commitments, 13.11.2025 (secondary) — https://www.economx.hu/magyar-gazdasag/2025/11/13/gvh-versenyhivatal-eljaras-lidl-arak-819279/
+- Telex, GVH warning on an unofficial Árfigyelő app, 5.8.2023 (secondary) — https://telex.hu/belfold/2023/08/05/gvh-figyelmeztetes-kalozapplikacio-arfigyelo
