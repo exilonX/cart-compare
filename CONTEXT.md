@@ -43,3 +43,23 @@ _Avoid_: impact, benefit (they hide the harms)
 **Demand signal**:
 A product that shows people want to hunt grocery deals but does not compare baskets, such as a leaflet aggregator; evidence of appetite, not a Comparable.
 _Avoid_: competitor
+
+**Core**:
+What the index must keep to still be this project: Baskets priced across Romanian Chains, updated regularly with history kept, by a published method anyone can check, run open source, civic and not for profit, and usable by shoppers directly (free, no account, readable on a phone).
+_Avoid_: MVP, must-haves
+
+**Kill criterion**:
+A condition, set before reading the evidence, whose being met means we do not build the index.
+_Avoid_: red flag, deal-breaker
+
+**Pivot criterion**:
+A condition, set before reading the evidence, whose being met means we build something quite different, because part of the index's core is lost.
+_Avoid_: change of direction
+
+**Cut**:
+Dropping a feature outside the index's core; decided while re-scoping the MVP. A criterion can flag a Cut but never makes one.
+_Avoid_: descoping
+
+**Stop on notice**:
+Pausing any activity a Chain or an authority objects to in writing, from the moment the objection arrives, while the IT lawyer reviews it.
+_Avoid_: takedown, compliance request
