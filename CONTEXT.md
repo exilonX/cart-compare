@@ -7,8 +7,20 @@ An open-source, civic-first index that prices the same grocery baskets across Ro
 ### The index
 
 **Basket**:
-A fixed, published list of grocery items with matching rules, standing for one household type's typical shop.
+A fixed, published set of quantities of Item specifications, standing for one household type's typical shop; several Baskets share one list of Item specifications.
 _Avoid_: cart, shopping list
+
+**Item specification**:
+A written description of one Basket item (category, pack-size band and a quality tier set by measurable attributes) that the cheapest product on the shelf meeting it stands for, own brands included.
+_Avoid_: product, SKU (one specific product)
+
+**Price round**:
+One week's visits to the named store of each Chain, in which every Item specification is priced from the shelf labels, all within the same 48 hours.
+_Avoid_: scrape, crawl, snapshot
+
+**Tie threshold**:
+The smallest lead, as a share of the Basket total, at which a Chain may be named cheapest; below it the leading Chains are shown as tied.
+_Avoid_: margin of error (until it is measured)
 
 **Chain**:
 A grocery retailer brand operating many stores, such as Lidl or Kaufland.
@@ -27,7 +39,7 @@ A reduction that differs between loyalty members, such as targeted coupons, vouc
 _Avoid_: loyalty discount, coupon price
 
 **Reported price**:
-A price a Chain submits to Monitorul Prețurilor under its legal reporting duty; it may differ from the Shelf price actually on display.
+A price a Chain submits to Monitorul Prețurilor under its legal reporting duty; it may differ from the Shelf price actually on display. The index does not use Reported prices: Monitorul Prețurilor is not part of the project.
 _Avoid_: official price, shelf price (when the source is Monitorul Prețurilor)
 
 ### The exploration
